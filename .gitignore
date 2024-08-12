@@ -30,3 +30,25 @@
 *.exe
 *.out
 *.app
+
+# Ignore all executable files
+*.[eE][xX][eE]
+*.[oO]
+*.[aA]
+*.out
+*.bin
+*.exe
+*.app
+*.dylib
+*.so
+*.dll
+*.a
+*.lib
+*.pdb
+*.rsc
+*.obj
+*.manifest
+*.nib
+*.dSYM
+*.exe
+
