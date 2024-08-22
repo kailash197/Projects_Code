@@ -54,5 +54,8 @@
 
 .ipynb_checkpoints/
 .vscode/
+dronekit-python/
+librealsense/
+vcpkg/
 
 
