@@ -52,3 +52,7 @@
 *.dSYM
 *.exe
 
+.ipynb_checkpoints/
+.vscode/
+
+
