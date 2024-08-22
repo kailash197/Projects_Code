@@ -1,0 +1,3 @@
+First line written into file.
+Second line writtenFirst line written into file.
+Second line written

@@ -1,14 +1,39 @@
 #include <iostream>
-using namespace std;
-int main()
+#include <array>
 
-{
-    std::cout <<"Hello, World!"<< endl;;
+int main() {
+    // RGB image of size 4x5
+    std::array<std::array<std::array<int, 5>, 4>, 3> t3 =  {{
+        {{
+            {1,2,3,4,5},
+            {1,2,3,4,5},
+            {1,2,3,4,5},
+            {1,2,3,4,5}
+        }},
+        {{
+            {6,7,8,9,10},
+            {6,7,8,9,10},
+            {6,7,8,9,10},
+            {6,7,8,9,10}
+        }},
+        {{
+            {11,12,13,14,15},
+            {11,12,13,14,15},
+            {11,12,13,14,15},
+            {11,12,13,14,15}
+        }}
+    }};
 
-    int myArray[3] = {2,3};
-    std::cout << myArray[0] <<myArray[1] <<myArray[2] << endl ;
-    unsigned int arraySize = std::size(myArray) ;
-    cout << arraySize << endl;
-    unsigned int arraySizeOld = sizeof(myArray)/sizeof(myArray[0]);
-    cout << arraySizeOld<<endl;
-} 
+    // Print the array for verification
+    for (const auto& channel : t3) {
+        for (const auto& row : channel) {
+            for (const auto& elem : row) {
+                std::cout << elem << " ";
+            }
+            std::cout << std::endl;
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
+}
