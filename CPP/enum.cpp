@@ -51,3 +51,16 @@ int main() {
 
     return 0;
 }
+/*
+Total marks: 7
+
+Today is Wednesday!
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+
+*/
