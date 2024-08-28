@@ -14,9 +14,7 @@ class Test
         id = counter;
     }
     //Destructor
-    ~Test(){
-        cout<<"Destructor:  Test object deleted."<<endl<<endl;
-    }
+    ~Test() { cout<<"Destructor:  Test object deleted."<<endl<<endl; }
 };
 
 
