@@ -6,10 +6,11 @@ int main() {
     // declaration and definition and call all together
     [](){cout<<"Hello lambdas..."<<endl<<endl;}();
 
-    [](int a, int b){cout<<"The sum is: "<<a+b<<endl<<endl;}(7, 4);
+    // lambda takes parameters
+    [](int a, int b){cout<<"The sum is: "<< (a+b) <<endl<<endl;}(7, 4);
  
     //give name to similar anonymous function
-    auto sum = [](int a, int b){return a+b;};
+    auto sum = [](int a, int b)->int{return a+b;};
     cout<<"The sum is: "<<sum(7,5)<<endl<<endl;
 
     std::function<int(int, int)> f = [](int a, int b){ return a + b; };
@@ -37,8 +38,7 @@ int main() {
     cout << "Product: "<<f3()<<endl<<endl;
     cout<<"Value of x: "<< x<<" and y: "<< y<<endl<<endl;
 
-    //Reference everything in the scope
-    
+    //Reference everything in the scope    
     auto f4 = [&](){ cout<<"Value of x: "<< x<<" and y: "<< y<<endl<<endl; };
     f4();
     
