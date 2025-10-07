@@ -2,6 +2,8 @@
 #include <memory>
 /*
 unique_ptrs:
+- represents unique ownership, it cannot be copied
+- possible to move one unique_ptr to another one using move semantics
 - use <memory>
 - can be dereference using * or -> as raw ptrs
 - get(): 
